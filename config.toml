@@ -1,0 +1,9 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'es'
+title = 'Mi CV'
+theme = 'cv'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

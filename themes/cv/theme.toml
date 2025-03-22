@@ -1,0 +1,4 @@
+name = "CV Theme"
+license = "MIT"
+description = "A simple CV theme for Hugo"
+min_version = "0.92.0" 

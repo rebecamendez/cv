@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ .Title }}</title>
+        <meta name="description" content="{{ .Description }}">
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        {{- block "main" . }}{{- end }}
+
+        <div class="ai-icon" onclick="toggleAITooltip()">
+            <i class="fas fa-robot"></i>
+        </div>
+
+        <div class="ai-tooltip" id="aiTooltip">
+            {{ with .Site.GetPage "/assistant.md" }}
+                {{ .Content }}
+            {{ end }}
+        </div>
+
+        <script>
+        function toggleAITooltip() {
+            const tooltip = document.getElementById('aiTooltip');
+            tooltip.classList.toggle('show');
+        }
+
+        // Cerrar el tooltip al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            const tooltip = document.getElementById('aiTooltip');
+            const aiIcon = document.querySelector('.ai-icon');
+            
+            if (!aiIcon.contains(event.target) && !tooltip.contains(event.target)) {
+                tooltip.classList.remove('show');
+            }
+        });
+        </script>
+    </body>
+</html> 
