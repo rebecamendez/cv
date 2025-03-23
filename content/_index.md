@@ -131,9 +131,9 @@ canonicalURL: "https://rebecamendez.github.io/cv/"
 
 > Apasionada de la tecnología con una trayectoria diversa en backend, frontend, mobile y roles de <span class="highlight">liderazgo técnico</span>. Disfruto buscando soluciones prácticas y eficientes, siempre con foco en la <span class="highlight">calidad</span> y las buenas prácticas. Firme defensora de la trazabilidad y la monitorización, me encanta crear ambientes de trabajo donde los equipos puedan crecer y entregar valor de forma sostenible.
 
-## EXPERIENCIA PROFESIONAL
+## 💼 EXPERIENCIA PROFESIONAL
 
-### Tech Lead & Senior Backend Developer en Manfred <em>Mar 2022 - Presente | 3 años</em>
+### 🎯 Tech Lead & Senior Backend Developer en Manfred <em>Mar 2022 - Presente | 3 años</em>
 
 - Evolución del rol:
   - Senior Backend Developer (2022-2024): Desarrollo en backend y optimización de flujos en Jira
@@ -150,7 +150,7 @@ canonicalURL: "https://rebecamendez.github.io/cv/"
 - Proyectos destacados:
   - CMS corporativo de Inditex para las webs y apps nativas del ecommerce de Cadenas (2018-2022): Tech Lead (desde 2020) y desarrollo full-stack con <span class="highlight">Angular</span>, <span class="highlight">NodeJS</span>, <span class="highlight">TypeScript</span>, JavaScript, Jest, Bitbucket, Bamboo, ActiveMQ, OpenShift, ControlM, MariaDB, Couchbase, Varnish, Akamai, Grafana
   - Aplicación de Ecommerce Bershka iOS (2016-2018): Desarrollo nativo iOS (Objective-C, Swift)
-  - CMS para la gestión de las webs de Abanca (2014-2016): Desarrollo y coordinación del equipo técnico (4 personas). JavaScript, Ruby, Jenkins, Solr, Backbone, GitLab
+  - CMS para la gestión de las webs de Abanca (2014-2016): Desarrollo y  <span class="highlight">coordinación</span> del equipo técnico (4 personas). JavaScript, Ruby, Jenkins, Solr, Backbone, GitLab
 
 ### Experiencia Junior <em>2012 - 2014  | 2 años</em>
 
@@ -158,40 +158,41 @@ canonicalURL: "https://rebecamendez.github.io/cv/"
 - Becaria en la Cámara de Comercio de A Coruña: Soporte técnico y mantenimiento de sistemas
 - Stack: Java, Spring, JavaFX, SWT, PL/1
 
-## HABILIDADES TÉCNICAS
+## 🛠️ HABILIDADES TÉCNICAS
 
-### Liderazgo y Gestión
-- <span class="highlight">Liderazgo Técnico</span>: Gestión y mentorización de equipos, definición de arquitectura, facilitación ágil
-- Gestión de Stakeholders: Comunicación efectiva entre equipos técnicos y de negocio
-- Gestión de Proyectos: Metodologías ágiles, priorización, estimación y planificación
+### 👥 Liderazgo y Gestión
+- <span class="highlight">Liderazgo Técnico</span>: Gestión y mentorización de equipos, definición de soluciones de arquitectura
+- Gestión de equipos: Metodologías ágiles, priorización, estimación y planificación
+- Comunicación técnica: Reuniones con stakeholders, documentación y presentaciones técnicas
 
-### Arquitectura y DevOps
-- <span class="highlight">Arquitectura de Software</span>: Diseño de sistemas distribuidos, patrones de diseño, DDD, arquitectura hexagonal
-- Cloud & Infraestructura: <span class="highlight">AWS</span>, Kubernetes, Docker, OpenShift
+### ⚙️ Arquitectura y DevOps
+- <span class="highlight">Arquitectura de Software</span>: Arquitectura hexagonal, CQRS (implementación parcial), patrones de diseño, lenguaje ubícuo, enfoque pragmático.
+- Cloud & Infraestructura: Desarrollo en entornos con <span class="highlight">AWS</span>, Kubernetes, Docker, OpenShift
 - CI/CD: GitHub Actions, Jenkins, GitOps, despliegues automatizados
-- Monitorización: Datadog, Grafana, Metabase, observabilidad
+- Monitorización: Datadog, Grafana, Metabase, observabilidad y alertas
 
-### Desarrollo
+### 💻 Desarrollo
 - Backend: <span class="highlight">TypeScript</span>, NodeJS, NestJS, PostgreSQL, APIs REST/GraphQL
 - Testing: TDD, Jest, integración continua
 - Herramientas: Git, GitHub, GitLab, Jira, Linear, Confluence, Notion
 
-### Metodologías y Buenas Prácticas
+### 📋 Metodologías y Buenas Prácticas
+- Metodologías ágiles: Implementación de Kanban, optimización de flujo de trabajo y métricas de rendimiento (lead time, cycle time)
 - Documentación técnica y ADRs colaborativos
 - Gestión de deuda técnica y código legacy
 
-## EDUCACIÓN Y CURSOS RELEVANTES
+## 🎓 EDUCACIÓN Y CURSOS RELEVANTES
 - <span class="highlight">Tech Lead</span> (Engineering Manager Academy, Félix López Luis, 2024)
-- Varios cursos de arquitectura y Diseño de Sistemas (Udemy, 2024): DDD, Eventos, Microservicios y sistemas a gran escala
+- Cursos de arquitectura y Diseño de Sistemas (Udemy, 2024): DDD, Eventos, Microservicios y sistemas a gran escala
 - Scrum Master y Product Owner (Udemy, 2023)
 - <span class="highlight">Licenciada en Ingeniería Informática</span> - Universidad de A Coruña (2005-2012)
 
-## ARTÍCULOS Y PUBLICACIONES DESTACADAS
+## 📚 ARTÍCULOS Y PUBLICACIONES DESTACADAS
 - [Artículos en Medium](https://medium.com/@breogana) sobre buenas prácticas y liderazgo técnico, entre los que destaco:
     - [Arquitectura sin fliparse: hexágonos, monolitos y decisiones pragmáticas](https://medium.com/p/fc27844874b3)
 - "Evaluation of Class Binarization and Feature Selection in Tear Film Classification using TOPSIS" (ICAART 2013 - International Conference on Agents and Artificial Intelligence)
 
-## IDIOMAS
+## 🌍 IDIOMAS
 - Español (Bilingüe)
 - Gallego (Bilingüe)
 - Inglés (B1/B2)

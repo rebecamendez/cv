@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ .Title }}</title>
+        <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Tech Lead y Senior Backend Developer con más de 12 años de experiencia en desarrollo de productos y liderazgo de equipos.{{ end }}">
+        <meta name="author" content="{{ .Params.author | default "Rebeca Méndez Barallobre" }}">
+        <meta name="robots" content="index, follow">
+        
+        <!-- Font preload to avoid FOIT -->
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" as="style">
         
         <!-- Preconnect to external domains -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +22,15 @@
         
         <!-- Critical CSS -->
         <style>
+            /* Font fallback to prevent layout shift */
+            @font-face {
+                font-family: 'Merriweather';
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: local('Arial');
+            }
+            
             :root {
                 --primary-color: #000000;
                 --text-color: #000000;
@@ -25,21 +40,36 @@
                 --bg-color: #ffffff;
                 --border-color: #000;
                 --hover-color: #444;
+                --header-height: 150px;
+                --content-width: 800px;
             }
+            
+            /* Set explicit content-box to prevent layout shifts */
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            
             body {
-                font-family: "Merriweather", serif;
+                font-family: "Merriweather", Arial, sans-serif;
                 line-height: 1.4;
                 color: var(--text-color);
-                max-width: 800px;
+                max-width: var(--content-width);
                 margin: 0 auto;
                 padding: 1rem;
                 background: var(--bg-color);
                 min-height: 100vh;
             }
+            
             .header {
                 text-align: center;
                 margin-bottom: 2rem;
+                height: var(--header-height);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
+            
+            /* Reserve space for icons and tooltips */
             .ai-icon {
                 position: fixed;
                 bottom: 1rem;
@@ -57,6 +87,7 @@
                 transition: transform 0.3s ease;
                 border: 2px solid white;
             }
+            
             .ai-tooltip {
                 position: fixed;
                 bottom: 4rem;
@@ -66,17 +97,55 @@
                 border-radius: 8px;
                 box-shadow: 0 4px 20px rgba(0,0,0,0.15);
                 max-width: calc(100% - 2rem);
-                display: none;
+                width: 300px;
+                min-height: 100px;
+                visibility: hidden;
+                opacity: 0;
                 z-index: 999;
+                transition: visibility 0s, opacity 0.3s ease;
+            }
+            
+            .ai-tooltip.visible {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            /* Ensure images don't cause layout shifts */
+            img {
+                aspect-ratio: attr(width) / attr(height);
+                contain: layout paint style;
             }
         </style>
         
         <!-- Deferred styles -->
         <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript>
+            <link rel="stylesheet" href="css/style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+        </noscript>
         
         <!-- Scripts -->
         <script src="js/main.js" defer></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const aiIcon = document.querySelector('.ai-icon');
+                const tooltip = document.getElementById('aiTooltip');
+                
+                if (aiIcon && tooltip) {
+                    aiIcon.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        tooltip.classList.toggle('visible');
+                    });
+
+                    document.addEventListener('click', function(e) {
+                        if (!tooltip.contains(e.target) && !aiIcon.contains(e.target)) {
+                            tooltip.classList.remove('visible');
+                        }
+                    });
+                }
+            });
+        </script>
         
         <!-- Favicon -->
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
