@@ -3,18 +3,13 @@ title: "Rebeca Méndez Barallobre - Tech Lead & Senior Backend Developer"
 description: "Tech Lead con más de 12 años de experiencia desarrollando productos y liderando equipos. Experta en arquitectura de software, gestión de equipos y desarrollo de productos escalables."
 keywords: "tech lead, engineering manager, liderazgo técnico, arquitectura de software, gestión de equipos, TypeScript, NodeJS, AWS, PostgreSQL, metodologías ágiles, desarrollo backend, cloud computing, kubernetes, devops"
 author: "Rebeca Méndez Barallobre"
-date: 2024-03-23
-lastmod: 2024-03-23
+date: 2025-03-23
+lastmod: 2025-03-23
 draft: false
 type: "profile"
 layout: "cv"
-canonicalURL: "https://rebeca-mendez.com"
+canonicalURL: "https://rebecamendez.github.io/cv/"
 ---
-
-<!-- Preload critical resources -->
-<link rel="preload" href="/css/style.css" as="style">
-<link rel="preload" href="/js/main.js" as="script">
-<link rel="preload" href="/fonts/your-main-font.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="profile">
@@ -110,6 +105,8 @@ canonicalURL: "https://rebeca-mendez.com"
     </button>
 </div>
 
+<span class="last-update">Última actualización: 23/03/2025</span>
+
 # Rebeca Méndez Barallobre
 
 <div class="contact-info">
@@ -120,10 +117,11 @@ canonicalURL: "https://rebeca-mendez.com"
         <i class="fas fa-phone" aria-hidden="true"></i> <span class="phone-text">6XX XXX XXX</span>
     </a> -->
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/rebecamendezbarallobre/" title="LinkedIn" aria-label="Perfil de LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://github.com/rebecamendez" title="GitHub" aria-label="Perfil de GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-        <a href="https://medium.com/@breogana" title="Medium" aria-label="Perfil de Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
-        <a href="https://mnf.red/rebeca/" title="Manfred" aria-label="Perfil de Manfred"><i class="fas fa-briefcase" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/rebecamendezbarallobre/" title="LinkedIn" aria-label="Perfil de LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/rebecamendez" title="GitHub" aria-label="Perfil de GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://medium.com/@breogana" title="Medium" aria-label="Perfil de Medium" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium" aria-hidden="true"></i></a>
+        <a href="https://mnf.red/rebeca/" title="Manfred" aria-label="Perfil de Manfred" target="_blank" rel="noopener noreferrer"><i class="fas fa-briefcase" aria-hidden="true"></i></a>
+        <a href="https://rebecamendez.github.io/cv/" title="CV" aria-label="CV" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i></a>
     </div>
 </div>
 
@@ -135,17 +133,17 @@ canonicalURL: "https://rebeca-mendez.com"
 
 ## EXPERIENCIA PROFESIONAL
 
-### Tech Lead & Senior Backend Developer en Manfred <em>Marzo 2022 - Marzo 2024 | 2 años</em>
+### Tech Lead & Senior Backend Developer en Manfred <em>Mar 2022 - Presente | 3 años</em>
 
 - Evolución del rol:
   - Senior Backend Developer (2022-2024): Desarrollo en backend y optimización de flujos en Jira
-  - <span class="highlight">Tech Lead</span> (2024-actualidad): Liderazgo técnico del equipo, discovery y priorización del backlog
+  - <span class="highlight">Tech Lead</span> (2024-presente): Liderazgo técnico del equipo, discovery y priorización del backlog
 - Desarrollo de <span class="highlight">producto</span> en <span class="highlight">startup</span>: Portal para candidatos [Talent](https://www.getmanfred.com/) y ATS corporativo [Talent Engine](https://talent-engine.getmanfred.com/)
 - Stack: <span class="highlight">TypeScript</span>, NestJS, PostgreSQL, <span class="highlight">AWS</span> (Kubernetes, Lambdas, SQS, S3), integraciones con LinkedIn, GitHub, Airtable y Pipedrive
 - Arquitectura: Arquitectura hexagonal, TDD, API first, feature flags
 - Metodología: Agile, trunk-based development, despliegues diarios con GitHub Actions, observabilidad con Datadog y Metabase
 
-### Tech Lead & Ingeniero de Software en Nomasystems S.L. <em>Febrero 2014 - Febrero 2022 | 8 años</em>
+### Tech Lead & Ingeniero de Software en Nomasystems S.L. <em>Feb 2014 - Feb 2022 | 8 años</em>
 
 - Liderazgo técnico y decisiones de arquitectura en soluciones multi-tenant y multi-branding on-premise (OpenShift)
 - Desarrollo de soluciones escalables: Servicio a apps con millones de clientes y <span class="highlight">+100K usuarios simultáneos</span>
@@ -154,7 +152,7 @@ canonicalURL: "https://rebeca-mendez.com"
   - Aplicación de Ecommerce Bershka iOS (2016-2018): Desarrollo nativo iOS (Objective-C, Swift)
   - CMS para la gestión de las webs de Abanca (2014-2016): Desarrollo y coordinación del equipo técnico (4 personas). JavaScript, Ruby, Jenkins, Solr, Backbone, GitLab
 
-### Experiencia Junior <em>2012 - 2014</em>
+### Experiencia Junior <em>2012 - 2014  | 2 años</em>
 
 - Desarrollo de aplicaciones empresariales en consultoría para Abanca e Inditex
 - Becaria en la Cámara de Comercio de A Coruña: Soporte técnico y mantenimiento de sistemas
@@ -190,8 +188,8 @@ canonicalURL: "https://rebeca-mendez.com"
 
 ## ARTÍCULOS Y PUBLICACIONES DESTACADAS
 - [Artículos en Medium](https://medium.com/@breogana) sobre buenas prácticas y liderazgo técnico, entre los que destaco:
-  - [Arquitectura sin fliparse: hexágonos, monolitos y decisiones pragmáticas](https://medium.com/p/fc27844874b3)
-- "Evaluation of Class Binarization and Feature Selection in Tear Film Classification using TOPSIS" (ICAART 2013)
+    - [Arquitectura sin fliparse: hexágonos, monolitos y decisiones pragmáticas](https://medium.com/p/fc27844874b3)
+- "Evaluation of Class Binarization and Feature Selection in Tear Film Classification using TOPSIS" (ICAART 2013 - International Conference on Agents and Artificial Intelligence)
 
 ## IDIOMAS
 - Español (Bilingüe)
@@ -199,15 +197,6 @@ canonicalURL: "https://rebeca-mendez.com"
 - Inglés (B1/B2)
 
 <script>
-// Lazy load non-critical resources
-document.addEventListener('DOMContentLoaded', function() {
-    // Load Font Awesome
-    const fontAwesome = document.createElement('link');
-    fontAwesome.rel = 'stylesheet';
-    fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
-    document.head.appendChild(fontAwesome);
-});
-
 function shareCV() {
     if (navigator.share) {
         navigator.share({

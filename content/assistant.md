@@ -6,6 +6,7 @@ type: "assistant"
 
 👋 ¡Hola! te presento a Rebeca:
 
+
 **Tech Lead & Backend Developer**
 - 🎯 10+ años de experiencia
 - 🏗️ Arquitectura de software

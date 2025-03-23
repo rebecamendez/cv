@@ -4,15 +4,92 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ .Title }}</title>
-        <meta name="description" content="{{ .Description }}">
-        <link rel="stylesheet" href="/css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        
+        <!-- Preload critical resources -->
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="preload" href="js/main.js" as="script">
+        
+        <!-- Critical CSS -->
+        <style>
+            :root {
+                --primary-color: #000000;
+                --text-color: #000000;
+                --background-color: #ffffff;
+                --accent-color: #333333;
+                --link-color: #2980b9;
+                --bg-color: #ffffff;
+                --border-color: #000;
+                --hover-color: #444;
+            }
+            body {
+                font-family: "Merriweather", serif;
+                line-height: 1.4;
+                color: var(--text-color);
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 1rem;
+                background: var(--bg-color);
+                min-height: 100vh;
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .ai-icon {
+                position: fixed;
+                bottom: 1rem;
+                right: 1rem;
+                width: 3rem;
+                height: 3rem;
+                background: var(--primary-color);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                z-index: 1000;
+                transition: transform 0.3s ease;
+                border: 2px solid white;
+            }
+            .ai-tooltip {
+                position: fixed;
+                bottom: 4rem;
+                right: 1rem;
+                background: white;
+                padding: 1rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+                max-width: calc(100% - 2rem);
+                display: none;
+                z-index: 999;
+            }
+        </style>
+        
+        <!-- Deferred styles -->
+        <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        
+        <!-- Scripts -->
+        <script src="js/main.js" defer></script>
+        
+        <!-- Favicon -->
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
     </head>
     <body>
-        {{- block "main" . }}{{- end }}
+        <header class="header">
+        </header>
 
-        <div class="ai-icon" onclick="toggleAITooltip()">
+        <main>
+            {{- block "main" . }}{{- end }}
+        </main>
+
+        <div class="ai-icon">
             <i class="fas fa-robot"></i>
         </div>
 
@@ -21,22 +98,5 @@
                 {{ .Content }}
             {{ end }}
         </div>
-
-        <script>
-        function toggleAITooltip() {
-            const tooltip = document.getElementById('aiTooltip');
-            tooltip.classList.toggle('show');
-        }
-
-        // Cerrar el tooltip al hacer clic fuera
-        document.addEventListener('click', function(event) {
-            const tooltip = document.getElementById('aiTooltip');
-            const aiIcon = document.querySelector('.ai-icon');
-            
-            if (!aiIcon.contains(event.target) && !tooltip.contains(event.target)) {
-                tooltip.classList.remove('show');
-            }
-        });
-        </script>
     </body>
 </html> 

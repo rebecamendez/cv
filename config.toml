@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://rebecamendez.github.io/cv/'
 languageCode = 'es'
 title = 'Mi CV'
 theme = 'cv'
@@ -7,3 +7,20 @@ theme = 'cv'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML"]
+
+[params]
+  assets = ["css", "js", "images", "fonts"]
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+[permalinks]
+  assets = "/:sections/:filename"
