@@ -33,8 +33,6 @@
             
             :root {
                 --primary-color: #000000;
-                --text-color: #000000;
-                --background-color: #ffffff;
                 --accent-color: #333333;
                 --link-color: #2980b9;
                 --bg-color: #ffffff;
@@ -42,6 +40,9 @@
                 --hover-color: #444;
                 --header-height: 150px;
                 --content-width: 800px;
+                --section-spacing: 3rem;
+                --subsection-spacing: 2rem;
+                --item-spacing: 1.5rem;
             }
             
             /* Set explicit content-box to prevent layout shifts */
@@ -51,22 +52,83 @@
             
             body {
                 font-family: "Merriweather", Arial, sans-serif;
-                line-height: 1.4;
-                color: var(--text-color);
+                line-height: 1.8;
+                color: var(--primary-color);
                 max-width: var(--content-width);
                 margin: 0 auto;
-                padding: 1rem;
+                padding: 3rem;
                 background: var(--bg-color);
                 min-height: 100vh;
             }
             
             .header {
                 text-align: center;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
                 height: var(--header-height);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+            }
+            
+            /* Main sections */
+            h2 {
+                margin-top: 3.5rem !important;
+                margin-bottom: var(--subsection-spacing);
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid var(--border-color);
+                font-size: 1.8rem;
+            }
+
+            /* Subsections */
+            h3 {
+                margin-top: var(--subsection-spacing);
+                margin-bottom: var(--item-spacing);
+                font-size: 1.4rem;
+            }
+
+            /* List elements */
+            ul {
+                padding-left: 1.2rem;
+            }
+
+            li {
+                margin-bottom: var(--item-spacing);
+                line-height: 1.8;
+            }
+
+            /* Text blocks */
+            p, ul, li {
+                margin-bottom: var(--item-spacing);
+                line-height: 1.8;
+            }
+
+            /* Quotes and summary */
+            blockquote {
+                margin: var(--subsection-spacing) 0;
+                padding: 1.5rem 2rem;
+                background-color: rgba(0, 0, 0, 0.02);
+                border-left: 4px solid var(--primary-color);
+                border-radius: 0 4px 4px 0;
+            }
+
+            /* Main section spacing */
+            section, .experience-item, .skills-section {
+                margin-bottom: var(--subsection-spacing);
+            }
+
+            .experience-item:last-child {
+                margin-bottom: 0;
+            }
+
+            /* Skills adjustments */
+            .skills-section {
+                margin-bottom: var(--subsection-spacing);
+            }
+
+            /* Highlighted elements spacing */
+            .highlight {
+                padding: 0.2rem 0.4rem;
+                margin: 0 0.2rem;
             }
             
             /* Reserve space for icons and tooltips */
