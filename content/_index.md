@@ -4,7 +4,7 @@ description: "Tech Lead con más de 12 años de experiencia desarrollando produc
 keywords: "tech lead, engineering manager, liderazgo técnico, arquitectura de software, gestión de equipos, TypeScript, NodeJS, AWS, PostgreSQL, metodologías ágiles, desarrollo backend, cloud computing, kubernetes, devops"
 author: "Rebeca Méndez Barallobre"
 date: 2025-03-23
-lastmod: 2025-03-23
+lastmod: 2025-04-12
 draft: false
 type: "profile"
 layout: "cv"
@@ -105,7 +105,7 @@ canonicalURL: "https://rebecamendez.github.io/cv/"
     </button>
 </div>
 
-<span class="last-update">Última actualización: 23/03/2025</span>
+<span class="last-update">Última actualización: 12/04/2025</span>
 
 # Rebeca Méndez Barallobre
 
@@ -190,12 +190,14 @@ canonicalURL: "https://rebecamendez.github.io/cv/"
 ## 📚 ARTÍCULOS Y PUBLICACIONES DESTACADAS
 - [Artículos en Medium](https://medium.com/@breogana) sobre buenas prácticas y liderazgo técnico, entre los que destaco:
     - [Arquitectura sin fliparse: hexágonos, monolitos y decisiones pragmáticas](https://medium.com/p/fc27844874b3)
-- "Evaluation of Class Binarization and Feature Selection in Tear Film Classification using TOPSIS" (ICAART 2013 - International Conference on Agents and Artificial Intelligence)
+- [Bonilista: Menos Snacks. Más feature flags](https://mailchi.mp/bonillaware/menos-snacks-mas-feature-flags). 
+- [Manfred: De scrappers imposibles a APIs funcionales: la aventura de Manfred con LinkedIn](https://www.getmanfred.com/blog/de-scrappers-imposibles-a-apis-funcionales-la-aventura-de-manfred-con-linkedin%F0%9F%98%85)
+- [Evaluation of Class Binarization and Feature Selection in Tear Film Classification using TOPSIS](https://www.researchgate.net/publication/269400385_Evaluation_of_Class_Binarization_and_Feature_Selection_in_Tear_Film_Classification_using_TOPSIS) (International Conference on Agents and Artificial Intelligence 2013)
 
 ## 🌍 IDIOMAS
 - Español (Bilingüe)
 - Gallego (Bilingüe)
-- Inglés (B1/B2)
+- Inglés (B1)
 
 <script>
 function shareCV() {
